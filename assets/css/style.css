@@ -46,6 +46,11 @@ button:hover, button:active, button:focus {
 }
 
 /*Custom styles*/
+
+.weight-4{font-weight:400!important;}
+.weight-5{font-weight:500!important;}
+.weight-6{font-weight:600!important;}
+
 .align-left{text-align:left!important;}
 .align-right{text-align:right!important;}
 .align-center{text-align:center!important;}

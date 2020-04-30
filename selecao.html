@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#000000">
+  <title>Ubatuba Tem</title>
+  <meta name="description" content="Mobilekit HTML Mobile UI Kit">
+  <meta name="keywords" content="bootstrap 4, mobile template, cordova, phonegap, mobile, html" />
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/192x192.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="manifest" href="__manifest.json">
+</head>
+
+<body>
+
+  <!-- loader -->
+  <div id="loader">
+    <div class="spinner-grow text-secondary" role="status"></div>
+  </div>
+  <!-- * loader -->
+
+  <!-- App Bottom Menu -->
+  <div class="appBottomMenu">
+    <a href="index.html" class="item">
+      <div class="col">
+        <ion-icon name="home-outline"></ion-icon>
+      </div>
+    </a>
+    <a href="search.html" class="item">
+      <div class="col">
+        <ion-icon name="search-outline"></ion-icon>
+      </div>
+    </a>
+    <a href="#" class="item">
+      <div class="col">
+        <div class="action-button">
+          <ion-icon name="add-outline"></ion-icon>
+        </div>
+      </div>
+    </a>
+    <a href="favoritos.html" class="item">
+      <div class="col">
+        <ion-icon name="bookmark-outline"></ion-icon>
+      </div>
+    </a>
+    <a href="estatisticas.html" class="item">
+      <div class="col">
+        <ion-icon name="bar-chart-outline"></ion-icon>
+      </div>
+    </a>
+  </div>
+  <!-- * App Bottom Menu -->
+
+  <!-- App Header -->
+  <div class="appHeader bg-secondary scrolled">
+    <div class="left">
+      <a href="#" class="headerButton" data-toggle="modal" data-target="#sidebarPanel">
+        <ion-icon name="menu-outline"></ion-icon>
+      </a>
+    </div>
+    <div class="pageTitle">
+      ubatuba tem <ion-icon name="heart"></ion-icon>
+    </div>
+    <div class="right">
+      <a href="javascript:;" class="headerButton toggle-searchbox">
+        <ion-icon name="search-outline"></ion-icon>
+      </a>
+    </div>
+  </div>
+  <!-- * App Header -->
+
+  <!-- Search Component -->
+  <div id="search" class="appHeader">
+    <form class="search-form">
+      <div class="form-group searchbox">
+        <input type="text" class="form-control" placeholder="O que procura?">
+        <i class="input-icon">
+          <ion-icon name="search-outline"></ion-icon>
+        </i>
+        <a href="javascript:;" class="ml-1 close toggle-searchbox">
+          <ion-icon name="close-circle"></ion-icon>
+        </a>
+      </div>
+    </form>
+  </div>
+  <!-- * Search Component -->
+
+  <!-- App Capsule -->
+  <div id="appCapsule">
+
+    <div class="header-large-title mt-2">
+      <h1 class="title">Café da manhã</h1>
+    </div>
+
+    <!-- Tabs -->
+    <ul class="nav nav-tabs lined mt-1" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active align-left" data-toggle="tab" href="#tab1" role="tab">Cafeterias</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#tab2" role="tab">Pães artesanais</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#tab3" role="tab">Bolos</a>
+      </li>
+    </ul>
+    <div class="section full mb-2">
+      <div class="tab-content mt-0">
+
+        <!-- TAB1 -->
+        <div class="tab-pane fade show active" id="tab1" role="tabpanel">
+          <ul class="listview image-listview media border-none mb-2">
+            <li>
+              <a href="#" class="item">
+                <div class="imageWrapper">
+                  <img src="https://scontent-gru2-2.cdninstagram.com/v/t51.2885-19/s150x150/44914653_286709365301947_6756168751302836224_n.jpg?_nc_ht=scontent-gru2-2.cdninstagram.com&_nc_ohc=o55LB3Zkw_UAX8775Ym&oh=4b4582469f412121df42ba3291d67b9a&oe=5ED31959" alt="image" class="imaged w64">
+                </div>
+                <div class="in">
+                  <div>
+                    Gratitude Cafeteria
+                    <div class="text-muted">O café mais mineiro de Ubatuba</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item">
+                <div class="imageWrapper">
+                  <img src="https://scontent-gru2-2.cdninstagram.com/v/t51.2885-19/s150x150/43309197_303738503552285_2968647507703234560_n.jpg?_nc_ht=scontent-gru2-2.cdninstagram.com&_nc_ohc=pxYne4EDor0AX_hTev5&oh=fbf952529773401ca26e13c1b0647f45&oe=5ED22B63" alt="image" class="imaged w64">
+                </div>
+                <div class="in">
+                  <div>
+                    Embaúba Café e Torteria
+                    <div class="text-muted">Café e torteria especializado em servir com carinho e qualidade</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item">
+                <div class="imageWrapper">
+                  <img src="https://scontent-gru2-2.cdninstagram.com/v/t51.2885-19/s150x150/51321803_293488787992950_7156774047651463168_n.jpg?_nc_ht=scontent-gru2-2.cdninstagram.com&_nc_ohc=FPKZ2qBbujwAX97mCdl&oh=e0918c3d24657ead6b78f805844bd544&oe=5ED588FA" alt="image" class="imaged w64">
+                </div>
+                <div class="in">
+                  <div>
+                    Flor de Café Cafeteria
+                    <div class="text-muted">Bolos, tortas e quiches</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item">
+                <div class="imageWrapper">
+                  <img src="https://scontent-gru2-2.cdninstagram.com/v/t51.2885-19/s150x150/23596426_1995077467441262_8952520614506135552_n.jpg?_nc_ht=scontent-gru2-2.cdninstagram.com&_nc_ohc=aeeauj5RiBUAX9eox0Q&oh=827ce5bf142a71ee5a9cafeb0db23aec&oe=5ED39409" alt="image" class="imaged w64">
+                </div>
+                <div class="in">
+                  <div>
+                    Café Estrela
+                    <div class="text-muted">Desde 2003 em Ubatuba</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item">
+                <div class="imageWrapper">
+                  <img src="https://scontent-gru2-2.cdninstagram.com/v/t51.2885-19/s150x150/33433903_182587522450799_8924661021377822720_n.jpg?_nc_ht=scontent-gru2-2.cdninstagram.com&_nc_ohc=YgEtyK2uXkEAX8sPj2p&oh=6e40baf6bc6d4518a0b93b0a5dee37c9&oe=5ED13E10" alt="image" class="imaged w64">
+                </div>
+                <div class="in">
+                  <div>
+                    Ellen Café e Doceria
+                    <div class="text-muted">Doces e Salgados</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item">
+                <div class="imageWrapper">
+                  <img src="https://scontent-gru2-2.cdninstagram.com/v/t51.2885-19/s150x150/15258875_1237185719671185_3523331543160324096_a.jpg?_nc_ht=scontent-gru2-2.cdninstagram.com&_nc_ohc=aq2WBfCVD7gAX_BxKBs&oh=d9624a25db7551da512be08f548177cb&oe=5ED36BED" alt="image" class="imaged w64">
+                </div>
+                <div class="in">
+                  <div>
+                    Madallena Café
+                    <div class="text-muted">Cafeteria, Café da Manhã, Refeições Vegetarianas e Sobremesas especiais.</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item">
+                <div class="imageWrapper">
+                  <img src="https://scontent-gru2-2.cdninstagram.com/v/t51.2885-19/s150x150/15101548_226794364420103_2622640827758804992_a.jpg?_nc_ht=scontent-gru2-2.cdninstagram.com&_nc_ohc=HFzARd5znugAX9deLp0&oh=752582fd341d759e29639439f8380637&oe=5ED1B3B5" alt="image" class="imaged w64">
+                </div>
+                <div class="in">
+                  <div>
+                    Diju Cafezinho
+                    <div class="text-muted">Cafés especiais, ️sucos, salgados, bolos, bebidas, doces</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- End:TAB1 -->
+
+        <!-- TAB2 -->
+        <div class="tab-pane fade show" id="tab2" role="tabpanel">
+          <ul class="listview image-listview media border-none mb-2">
+            <li>
+              <a href="#" class="item">
+                <div class="imageWrapper">
+                  <img src="https://scontent-gru2-2.cdninstagram.com/v/t51.2885-19/s150x150/95138020_3049327761793437_5140762277749719040_n.jpg?_nc_ht=scontent-gru2-2.cdninstagram.com&_nc_ohc=UFqVgPlcO6UAX97rHtj&oh=60eaca3e085e925a4c0d0eeab066a295&oe=5ED62886" alt="image" class="imaged w64">
+                </div>
+                <div class="in">
+                  <div>
+                    Tucano's Panificação
+                    <div class="text-muted">Deliciosos pães fresquinhos e roscas caseiras</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item">
+                <div class="imageWrapper">
+                  <img src="https://scontent-gru2-2.cdninstagram.com/v/t51.2885-19/s150x150/93592879_277154649972909_7130863652415995904_n.jpg?_nc_ht=scontent-gru2-2.cdninstagram.com&_nc_ohc=FFZMRIJO6W8AX9gUJRe&oh=3eeb47e1e41471aa03b5d6d9ae1d93a6&oe=5ED2B8A8" alt="image" class="imaged w64">
+                </div>
+                <div class="in">
+                  <div>
+                    Maycon Arcante
+                    <div class="text-muted">Pães de Fermentação Natural - Produção caseira</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item">
+                <div class="imageWrapper">
+                  <img src="https://scontent-gru2-2.cdninstagram.com/v/t51.2885-19/s150x150/94161681_2652028388400485_5986563611756068864_n.jpg?_nc_ht=scontent-gru2-2.cdninstagram.com&_nc_ohc=9ytrtqCyScAAX_ow3dh&oh=e8265b82d6d93c1b72c9322f591049a1&oe=5ED1EB62" alt="image" class="imaged w64">
+                </div>
+                <div class="in">
+                  <div>
+                    Pães Caseiros Fresquinhos
+                    <div class="text-muted">Faço pães sem conservantes, com muito amor e carinho</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item">
+                <div class="imageWrapper">
+                  <img src="https://scontent-gru2-2.cdninstagram.com/v/t51.2885-19/s150x150/39168398_167606454078301_6407432125720559616_n.jpg?_nc_ht=scontent-gru2-2.cdninstagram.com&_nc_ohc=t576LEQCMmgAX-UXEKq&oh=f812d4cf3f3edf26f29e5e0b5c858c7b&oe=5ED308F4" alt="image" class="imaged w64">
+                </div>
+                <div class="in">
+                  <div>
+                    Gengibre Ateliê De Pães
+                    <div class="text-muted">Pães feitos com farinha, fermento e amor</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item">
+                <div class="imageWrapper">
+                  <img src="https://scontent-gru2-2.cdninstagram.com/v/t51.2885-19/s150x150/82163023_2601646583413094_1315259972631658496_n.jpg?_nc_ht=scontent-gru2-2.cdninstagram.com&_nc_ohc=piWDeocIxnQAX_A4ap1&oh=0c7d9ef29b3d83723584f65c6c22bc19&oe=5ED153B4" alt="image" class="imaged w64">
+                </div>
+                <div class="in">
+                  <div>
+                    Maria Farinha Pães Artesanais
+                    <div class="text-muted">Pães artesanais</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- End:TAB2 -->
+
+        <!-- TAB3 -->
+        <div class="tab-pane fade show" id="tab3" role="tabpanel">
+          <ul class="listview image-listview media border-none mb-2">
+            <li>
+              <a href="#" class="item">
+                <div class="imageWrapper">
+                  <img src="https://scontent-gru2-2.cdninstagram.com/v/t51.2885-19/s150x150/53868412_607436066384675_7257551224709316608_n.jpg?_nc_ht=scontent-gru2-2.cdninstagram.com&_nc_ohc=pxLO1f48psUAX9GdcSX&oh=862dec52b490374b940bf19655e7c3c0&oe=5ED0F866" alt="image" class="imaged w64">
+                </div>
+                <div class="in">
+                  <div>
+                    O Bolo de Ubatuba
+                    <div class="text-muted">Bolos caseiros</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item">
+                <div class="imageWrapper">
+                  <img src="https://scontent-gru2-2.cdninstagram.com/v/t51.2885-19/s150x150/72535675_528597361267244_4537105887017304064_n.jpg?_nc_ht=scontent-gru2-2.cdninstagram.com&_nc_ohc=PCLfo62EKJwAX98teO7&oh=d4ae924607551bb51a0c2b1696c1496a&oe=5ED16019" alt="image" class="imaged w64">
+                </div>
+                <div class="in">
+                  <div>
+                    Amanda Zuin Cake Shop Ubatuba
+                    <div class="text-muted">Transformando a experiência de se deliciar com um bolo</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item">
+                <div class="imageWrapper">
+                  <img src="https://scontent-gru2-2.cdninstagram.com/v/t51.2885-19/s150x150/51321803_293488787992950_7156774047651463168_n.jpg?_nc_ht=scontent-gru2-2.cdninstagram.com&_nc_ohc=FPKZ2qBbujwAX97mCdl&oh=e0918c3d24657ead6b78f805844bd544&oe=5ED588FA" alt="image" class="imaged w64">
+                </div>
+                <div class="in">
+                  <div>
+                    Flor de Café Cafeteria
+                    <div class="text-muted">Bolos, tortas e quiches</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item">
+                <div class="imageWrapper">
+                  <img src="https://scontent-gru2-2.cdninstagram.com/v/t51.2885-19/s150x150/61199676_379169869382957_4235077086613602304_n.jpg?_nc_ht=scontent-gru2-2.cdninstagram.com&_nc_ohc=knR4SHwyaCgAX_tUgkJ&oh=015da1a0c0f823584f146a06e8efee75&oe=5ED03FC6" alt="image" class="imaged w64">
+                </div>
+                <div class="in">
+                  <div>
+                    Carol Macedo Confeitaria Criativa
+                    <div class="text-muted">Confeiteira por amor</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item">
+                <div class="imageWrapper">
+                  <img src="https://scontent-gru2-2.cdninstagram.com/v/t51.2885-19/s150x150/23596426_1995077467441262_8952520614506135552_n.jpg?_nc_ht=scontent-gru2-2.cdninstagram.com&_nc_ohc=aeeauj5RiBUAX9eox0Q&oh=827ce5bf142a71ee5a9cafeb0db23aec&oe=5ED39409" alt="image" class="imaged w64">
+                </div>
+                <div class="in">
+                  <div>
+                    Café Estrela
+                    <div class="text-muted">Desde 2003 em Ubatuba</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- End:TAB3 -->
+
+
+      </div>
+      <!-- End:TabContent -->
+    </div>
+    <!-- End:Section -->
+
+
+  </div>
+  <!-- * App Capsule -->
+
+
+
+  <!-- app footer -->
+  <div class="appFooter">
+    <!-- <img src="assets/img/logo.png" alt="icon" class="footer-logo mb-2"> -->
+    <h3>ubatuba tem <ion-icon name="heart"></ion-icon></h3>
+    <div>catálogo colaborativo de pequenos negócios</div>
+    <div class="footer-title">
+      apoie o pequeno negócio local
+    </div>
+
+    <div class="mt-2">
+      <a href="javascript:;" class="btn btn-icon btn-sm btn-instagram">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+      <a href="javascript:;" class="btn btn-icon btn-sm btn-whatsapp">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+      </a>
+    </div>
+
+  </div>
+  <!-- * app footer -->
+
+</div>
+<!-- * App Capsule -->
+
+
+
+
+<!-- App Sidebar -->
+<div class="modal fade panelbox panelbox-left" id="sidebarPanel" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body p-0">
+
+        <!-- profile box -->
+        <div class="profileBox">
+          <div class="image-wrapper">
+            <img src="assets/img/sample/avatar/avatar1.jpg" alt="image" class="imaged rounded">
+          </div>
+          <div class="in">
+            <strong>Julian Gruber</strong>
+            <div class="text-muted">
+              <ion-icon name="location"></ion-icon>
+              California
+            </div>
+          </div>
+          <a href="javascript:;" class="close-sidebar-button" data-dismiss="modal">
+            <ion-icon name="close"></ion-icon>
+          </a>
+        </div>
+        <!-- * profile box -->
+
+        <ul class="listview flush transparent no-line image-listview mt-2">
+          <li>
+            <a href="index.html" class="item">
+              <div class="icon-box bg-primary">
+                <ion-icon name="home-outline"></ion-icon>
+              </div>
+              <div class="in">
+                Discover
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="app-components.html" class="item">
+              <div class="icon-box bg-primary">
+                <ion-icon name="cube-outline"></ion-icon>
+              </div>
+              <div class="in">
+                Components
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="app-pages.html" class="item">
+              <div class="icon-box bg-primary">
+                <ion-icon name="layers-outline"></ion-icon>
+              </div>
+              <div class="in">
+                <div>Pages</div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="page-chat.html" class="item">
+              <div class="icon-box bg-primary">
+                <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+              </div>
+              <div class="in">
+                <div>Chat</div>
+                <span class="badge badge-danger">5</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <div class="item">
+              <div class="icon-box bg-primary">
+                <ion-icon name="moon-outline"></ion-icon>
+              </div>
+              <div class="in">
+                <div>Dark Mode</div>
+                <div class="custom-control custom-switch">
+                  <input type="checkbox" class="custom-control-input dark-mode-switch"
+                  id="darkmodesidebar">
+                  <label class="custom-control-label" for="darkmodesidebar"></label>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="listview-title mt-2 mb-1">
+          <span>Friends</span>
+        </div>
+        <ul class="listview image-listview flush transparent no-line">
+          <li>
+            <a href="page-chat.html" class="item">
+              <img src="assets/img/sample/avatar/avatar7.jpg" alt="image" class="image">
+              <div class="in">
+                <div>Sophie Asveld</div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="page-chat.html" class="item">
+              <img src="assets/img/sample/avatar/avatar3.jpg" alt="image" class="image">
+              <div class="in">
+                <div>Sebastian Bennett</div>
+                <span class="badge badge-danger">6</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="page-chat.html" class="item">
+              <img src="assets/img/sample/avatar/avatar10.jpg" alt="image" class="image">
+              <div class="in">
+                <div>Beth Murphy</div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="page-chat.html" class="item">
+              <img src="assets/img/sample/avatar/avatar2.jpg" alt="image" class="image">
+              <div class="in">
+                <div>Amelia Cabal</div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="page-chat.html" class="item">
+              <img src="assets/img/sample/avatar/avatar5.jpg" alt="image" class="image">
+              <div class="in">
+                <div>Henry Doe</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+      <!-- sidebar buttons -->
+      <div class="sidebar-buttons">
+        <a href="javascript:;" class="button">
+          <ion-icon name="person-outline"></ion-icon>
+        </a>
+        <a href="javascript:;" class="button">
+          <ion-icon name="archive-outline"></ion-icon>
+        </a>
+        <a href="javascript:;" class="button">
+          <ion-icon name="settings-outline"></ion-icon>
+        </a>
+        <a href="javascript:;" class="button">
+          <ion-icon name="log-out-outline"></ion-icon>
+        </a>
+      </div>
+      <!-- * sidebar buttons -->
+    </div>
+  </div>
+</div>
+<!-- * App Sidebar -->
+
+
+<!-- ///////////// Js Files ////////////////////  -->
+<!-- Jquery -->
+<script src="assets/js/lib/jquery-3.4.1.min.js"></script>
+<!-- Bootstrap-->
+<script src="assets/js/lib/popper.min.js"></script>
+<script src="assets/js/lib/bootstrap.min.js"></script>
+<!-- Ionicons -->
+<script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+<!-- Owl Carousel -->
+<script src="assets/js/plugins/owl-carousel/owl.carousel.min.js"></script>
+<!-- jQuery Circle Progress -->
+<script src="assets/js/plugins/jquery-circle-progress/circle-progress.min.js"></script>
+<!-- Base Js File -->
+<script src="assets/js/base.js"></script>
+
+
+<script>
+  // setTimeout(() => {
+  //   notification('notification-welcome', 5000);
+  // }, 2000);
+</script>
+
+</body>
+
+</html>
