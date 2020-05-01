@@ -1893,7 +1893,7 @@ a.badge-dark {
 }
 
 .multi-level ul > li {
-  border: 0 !important;
+  /*border: 0 !important;*/
 }
 
 .multi-level ul > li:after {
@@ -1902,7 +1902,7 @@ a.badge-dark {
 
 .multi-level ul > li a,
 .multi-level ul > li .item {
-  padding-left: 68px !important;
+  padding-left: 36px !important;
 }
 
 .multi-level.active > a:after {
@@ -4917,8 +4917,8 @@ textarea,
 
 .search-result li > .item,
 .search-result li > a {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .carousel-slider {
