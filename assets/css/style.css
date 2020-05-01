@@ -794,7 +794,7 @@ button:hover, button:active, button:focus {
 
 .appFooter {
   border-top: 1px solid #E1E1E1;
-  padding: 24px 16px;
+  padding: 30px 16px 80px;
   font-size: 12px;
   text-align: center;
   line-height: 1.2em;
@@ -1669,7 +1669,7 @@ a.badge-dark {
 }
 
 .listview .text-muted {
-  font-size: 13px;
+  font-size: 12px;
   color: #A1A1A2 !important;
 }
 
