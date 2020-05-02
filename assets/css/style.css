@@ -1829,6 +1829,8 @@ a.badge-dark {
   width: 100%;
 }
 
+.image-listview > li .item .in .small {font-size: 13px;}
+
 .image-listview > li a.item {
   color: #141515 !important;
   padding-right: 36px;
@@ -6260,6 +6262,7 @@ textarea,
 .profile-head .in .name {
   margin: 0 0 5px 0;
   font-weight: 500;
+  font-size: 15px;
 }
 
 .profile-head .in .subtext {
