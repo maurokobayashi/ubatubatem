@@ -127,6 +127,29 @@
   </div>
   <!-- * Action Sheet Comment -->
 
+  <!-- Action Sheet Regioes -->
+  <div class="modal fade action-sheet" id="action-sheet-regioes" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Regiões de entrega</h5>
+        </div>
+        <div class="modal-body">
+          <div class="action-sheet-content">
+            <p class="font-13">
+              <strong class="display-block">Delivery:</strong>
+              Praia Grande, Itaguá, Centro, Estufa I, Estufa II, Jardim Carolina, Perequê Açu
+              <strong class="display-block mt-1">Retirada:</strong>
+              Itaguá
+            </p>
+            <a href="#" class="btn btn-secondary btn-block btn-sm" data-dismiss="modal">Fechar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- * Action Sheet Regioes -->
+
   <!-- Dialog WhatsApp -->
   <div class="modal fade dialogbox" id="dialog-whatsapp" data-backdrop="static" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
@@ -204,13 +227,16 @@
 
     <div class="section mt-2 mb-2">
       <div class="profile-info">
-        <div class=" bio">
+        <div class="bio">
           Pães de Fermentação Natural - Itaguá/Ubatuba
-          <br>Produção caseira
           <br>Pedidos por Mensagem ou por WhatsApp
         </div>
+        <div class="mt-1">
+          <a href="#" class="display-block color-secondary" data-toggle="modal" data-target="#action-sheet-regioes">Delivery ou retirada <ion-icon name="information-circle-outline"></ion-icon></a>
+          Terça a Sábado - 08h às 20h
+        </div>
         <div class="link">
-          <a href="#" data-toggle="modal" data-target="#dialog-whatsapp">11 98045-6449</a>
+          <a href="#" class="display-block" data-toggle="modal" data-target="#dialog-whatsapp">11 98045-6449</a>
         </div>
       </div>
     </div>

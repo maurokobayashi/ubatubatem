@@ -47,16 +47,22 @@ button:hover, button:active, button:focus {
 
 /*Custom styles*/
 
+.align-left{text-align:left!important;}
+.align-right{text-align:right!important;}
+.align-center{text-align:center!important;}
+.border-none{border:none!important;}
+.display-block{display:block!important;}
+.font-12{font-size:12px!important;}
+.font-13{font-size:13px!important;}
+.font-14{font-size:14px!important;}
+.font-15{font-size:15px!important;}
+.font-16{font-size:16px!important;}
 .weight-4{font-weight:400!important;}
 .weight-5{font-weight:500!important;}
 .weight-6{font-weight:600!important;}
 
-.align-left{text-align:left!important;}
-.align-right{text-align:right!important;}
-.align-center{text-align:center!important;}
 
-.border-none{border:none!important;}
-
+/*-------*/
 
 .appHeader {
   min-height: 56px;
@@ -3488,6 +3494,10 @@ a.badge-dark {
 .bg-dark {
   background: #222 !important;
   color: #FFF;
+}
+
+a.color-secondary {
+  color: #6C7C94 !important;
 }
 
 a.bg-primary {
