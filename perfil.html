@@ -84,6 +84,49 @@
   </div>
   <!-- * Action Sheet Share -->
 
+  <!-- Action Sheet Comment -->
+  <div class="modal fade action-sheet" id="action-sheet-comment" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Escreva o seu comentário</h5>
+        </div>
+        <div class="modal-body">
+          <div class="action-sheet-content">
+            <form>
+              <div class="form-group basic">
+                <div class="input-wrapper">
+                  <label class="label" for="name3">Nome</label>
+                  <input type="text" class="form-control" id="name"
+                  placeholder="Seu nome">
+                  <i class="clear-input">
+                    <ion-icon name="close-circle"></ion-icon>
+                  </i>
+                </div>
+              </div>
+
+              <div class="form-group basic">
+                <div class="input-wrapper">
+                  <label class="label" for="comment">Comentário</label>
+                  <textarea type="text" class="form-control" id="comment"
+                  placeholder="Seu comentário"></textarea>
+                  <i class="clear-input">
+                    <ion-icon name="close-circle"></ion-icon>
+                  </i>
+                </div>
+              </div>
+              <div class="form-group basic">
+                <button type="button" class="btn btn-primary btn-block btn-sm"
+                data-dismiss="modal">Publicar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- * Action Sheet Comment -->
+
   <!-- Dialog WhatsApp -->
   <div class="modal fade dialogbox" id="dialog-whatsapp" data-backdrop="static" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
@@ -92,10 +135,10 @@
           <ion-icon name="logo-whatsapp"></ion-icon>
         </div>
         <div class="modal-header">
-          <h5 class="modal-title">Maycon Arcante Pães Artesanais</h5>
+          <h5 class="modal-title">11 980456449</h5>
         </div>
         <div class="modal-body">
-          11 980456449
+          Maycon Arcante Pães Artesanais
         </div>
         <div class="modal-footer">
           <div class="btn-inline">
@@ -163,11 +206,11 @@
       <div class="profile-info">
         <div class=" bio">
           Pães de Fermentação Natural - Itaguá/Ubatuba
-          <br>Produção caseira - #compredopequeno
+          <br>Produção caseira
           <br>Pedidos por Mensagem ou por WhatsApp
         </div>
         <div class="link">
-          <a href="#">11 98045-6449</a>
+          <a href="#" data-toggle="modal" data-target="#dialog-whatsapp">11 98045-6449</a>
         </div>
       </div>
     </div>
@@ -199,17 +242,17 @@
       <div class="wide-block transparent p-0">
         <ul class="nav nav-tabs lined iconed" role="tablist">
           <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#feed" role="tab">
+            <a class="nav-link active" data-toggle="tab" href="#tab1" role="tab">
               <ion-icon name="camera-outline"></ion-icon>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#friends" role="tab">
+            <a class="nav-link" data-toggle="tab" href="#tab2" role="tab">
               <ion-icon name="chatbox-outline"></ion-icon>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#bookmarks" role="tab">
+            <a class="nav-link" data-toggle="tab" href="#tab3" role="tab">
               <ion-icon name="analytics-outline"></ion-icon>
             </a>
           </li>
@@ -227,8 +270,8 @@
     <div class="section full mb-2">
       <div class="tab-content">
 
-        <!-- feed -->
-        <div class="tab-pane fade show active" id="feed" role="tabpanel">
+        <!-- TAB1: fotos -->
+        <div class="tab-pane fade show active" id="tab1" role="tabpanel">
           <div class="mt-2 pr-2 pl-2">
             <div class="row">
               <div class="col-4 mb-2">
@@ -252,182 +295,129 @@
             </div>
           </div>
         </div>
-        <!-- * feed -->
+        <!-- * TAB1 -->
 
-        <!-- * friends -->
-        <div class="tab-pane fade" id="friends" role="tabpanel">
-          <ul class="listview image-listview flush transparent pt-1">
-            <li>
-              <a href="#" class="item">
-                <img src="assets/img/sample/avatar/avatar3.jpg" alt="image" class="image">
-                <div class="in">
-                  <div>
-                    Edward Lindgren
-                    <div class="text-muted">532 followers</div>
+        <!-- * TAB2: comentários -->
+        <div class="tab-pane fade" id="tab2" role="tabpanel">
+          <div class="section full mt-2 mb-2">
+            <div class="section-title">2 Comentários</div>
+            <div class="wide-block border-none pt-2 pb-2">
+
+              <!-- comment block -->
+              <div class="comment-block">
+                <div class="item">
+                  <div class="avatar">
+                    <img src="assets/img/sample/avatar/avatar1.jpg" alt="avatar" class="imaged w32 rounded">
+                  </div>
+                  <div class="in">
+                    <div class="comment-header">
+                      <h4 class="title">Diego Morata</h4>
+                      <span class="time">há 2 dias</span>
+                    </div>
+                    <div class="text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                    <div class="comment-footer">
+                      <a href="javascript:;" class="comment-button">
+                        <ion-icon name="heart-outline"></ion-icon>
+                        Curtir (2)
+                      </a>
+                      <a href="javascript:;" class="comment-button">
+                        <ion-icon name="flag-outline"></ion-icon>
+                        Denunciar
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="item">
-                <img src="assets/img/sample/avatar/avatar2.jpg" alt="image" class="image">
-                <div class="in">
-                  <div>
-                    Emelda Scandroot
-                    <div class="text-muted">120k followers</div>
+                <div class="item">
+                  <div class="avatar">
+                    <img src="assets/img/sample/avatar/avatar3.jpg" alt="avatar" class="imaged w32 rounded">
+                  </div>
+                  <div class="in">
+                    <div class="comment-header">
+                      <h4 class="title">Henry Itondo</h4>
+                      <span class="time">há 5 dias</span>
+                    </div>
+                    <div class="text">
+                      Sed laoreet leo eget maximus ultricies. Nunc vitae enim facilisis tortor aliquet
+                      ullamcorper
+                      nec at tortor.
+                    </div>
+                    <div class="comment-footer">
+                      <a href="javascript:;" class="comment-button">
+                        <ion-icon name="heart" class="text-danger"></ion-icon>
+                        Curtiu (4)
+                      </a>
+                      <a href="javascript:;" class="comment-button">
+                        <ion-icon name="flag-outline"></ion-icon>
+                        Denunciar
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="item">
-                <img src="assets/img/sample/avatar/avatar5.jpg" alt="image" class="image">
-                <div class="in">
-                  <div>
-                    Henry Bove
-                    <div class="text-muted">920k followers</div>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="item">
-                <img src="assets/img/sample/avatar/avatar4.jpg" alt="image" class="image">
-                <div class="in">
-                  <div>
-                    Ava Gregoraci
-                    <div class="text-muted">5092 followers</div>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="item">
-                <img src="assets/img/sample/avatar/avatar6.jpg" alt="image" class="image">
-                <div class="in">
-                  <div>
-                    Emmy Elsner
-                    <div class="text-muted">92 followers</div>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="item">
-                <img src="assets/img/sample/avatar/avatar7.jpg" alt="image" class="image">
-                <div class="in">
-                  <div>
-                    Lisanne Viscaal
-                    <div class="text-muted">893 followers</div>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="item">
-                <img src="assets/img/sample/avatar/avatar10.jpg" alt="image" class="image">
-                <div class="in">
-                  <div>
-                    Cecilia Pozo
-                    <div class="text-muted">51k followers</div>
-                  </div>
-                </div>
-              </a>
-            </li>
-          </ul>
+              </div>
+              <!-- * comment block -->
+
+            </div>
+
+            <div class="section mt-2 mb-4">
+              <button type="button" class="btn btn-primary btn-sm btn-block" data-toggle="modal" data-target="#action-sheet-comment">Escrever comentário</button>
+            </div>
+
+          </div>
         </div>
         <!-- * friends -->
 
-        <!--  bookmarks -->
-        <div class="tab-pane fade" id="bookmarks" role="tabpanel">
-          <ul class="listview image-listview media flush transparent pt-1">
-            <li>
-              <a href="#" class="item">
-                <div class="imageWrapper">
-                  <img src="assets/img/sample/photo/1.jpg" alt="image" class="imaged w64">
-                </div>
-                <div class="in">
-                  <div>
-                    Birds
-                    <div class="text-muted">62 photos</div>
-                  </div>
-                  <span class="badge badge-primary">5</span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="item">
-                <div class="imageWrapper">
-                  <img src="assets/img/sample/photo/2.jpg" alt="image" class="imaged w64">
-                </div>
-                <div class="in">
-                  <div>
-                    Street Photos
-                    <div class="text-muted">15 photos</div>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="item">
-                <div class="imageWrapper">
-                  <img src="assets/img/sample/photo/3.jpg" alt="image" class="imaged w64">
-                </div>
-                <div class="in">
-                  <div>
-                    Dogs
-                    <div class="text-muted">97 photos</div>
-                  </div>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- * bookmarks -->
         <!-- settings -->
-        <div class="tab-pane fade" id="settings" role="tabpanel">
+        <div class="tab-pane fade" id="tab3" role="tabpanel">
           <ul class="listview image-listview text flush transparent pt-1">
             <li>
               <div class="item">
                 <div class="in">
-                  <div>
-                    Mute
-                    <footer>Disabled notifications from this person</footer>
-                  </div>
-                  <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                    <label class="custom-control-label" for="customSwitch1"></label>
-                  </div>
+                  <div class="small">Visualizações</div>
+                  <span class="text-muted">68</span>
                 </div>
               </div>
             </li>
             <li>
-              <a href="#" class="item">
+              <div class="item">
                 <div class="in">
-                  <div class="text-danger">Block</div>
+                  <div class="small">Salvo em favoritos</div>
+                  <span class="text-muted">12</span>
                 </div>
-              </a>
+              </div>
             </li>
             <li>
-              <a href="#" class="item">
+              <div class="item">
                 <div class="in">
-                  <div>Report</div>
+                  <div class="small">Mensagens por WhatsApp</div>
+                  <span class="text-muted">6</span>
                 </div>
-              </a>
+              </div>
             </li>
             <li>
-              <a href="#" class="item">
+              <div class="item">
                 <div class="in">
-                  <div>Share This Profile</div>
+                  <div class="small">Visitas no Instagram</div>
+                  <span class="text-muted">6</span>
                 </div>
-              </a>
+              </div>
             </li>
             <li>
-              <a href="#" class="item">
+              <div class="item">
                 <div class="in">
-                  <div>Send a Message</div>
+                  <div class="small">Compartilhamentos</div>
+                  <span class="text-muted">2</span>
                 </div>
-              </a>
+              </div>
+            </li>
+            <li>
+              <div class="item">
+                <div class="in">
+                  <div class="small">Comentários</div>
+                  <span class="text-muted">2</span>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -471,158 +461,6 @@
   </div>
   <!-- * App Bottom Menu -->
 
-  <!-- App Sidebar -->
-  <div class="modal fade panelbox panelbox-left" id="sidebarPanel" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-body p-0">
-
-          <!-- profile box -->
-          <div class="profileBox">
-            <div class="image-wrapper">
-              <img src="assets/img/sample/avatar/avatar1.jpg" alt="image" class="imaged rounded">
-            </div>
-            <div class="in">
-              <strong>Julian Gruber</strong>
-              <div class="text-muted">
-                <ion-icon name="location"></ion-icon>
-                California
-              </div>
-            </div>
-            <a href="javascript:;" class="close-sidebar-button" data-dismiss="modal">
-              <ion-icon name="close"></ion-icon>
-            </a>
-          </div>
-          <!-- * profile box -->
-
-          <ul class="listview flush transparent no-line image-listview mt-2">
-            <li>
-              <a href="index.html" class="item">
-                <div class="icon-box bg-primary">
-                  <ion-icon name="home-outline"></ion-icon>
-                </div>
-                <div class="in">
-                  Discover
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="app-components.html" class="item">
-                <div class="icon-box bg-primary">
-                  <ion-icon name="cube-outline"></ion-icon>
-                </div>
-                <div class="in">
-                  Components
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="app-pages.html" class="item">
-                <div class="icon-box bg-primary">
-                  <ion-icon name="layers-outline"></ion-icon>
-                </div>
-                <div class="in">
-                  <div>Pages</div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="page-chat.html" class="item">
-                <div class="icon-box bg-primary">
-                  <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
-                </div>
-                <div class="in">
-                  <div>Chat</div>
-                  <span class="badge badge-danger">5</span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <div class="item">
-                <div class="icon-box bg-primary">
-                  <ion-icon name="moon-outline"></ion-icon>
-                </div>
-                <div class="in">
-                  <div>Dark Mode</div>
-                  <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input dark-mode-switch"
-                    id="darkmodesidebar">
-                    <label class="custom-control-label" for="darkmodesidebar"></label>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-
-          <div class="listview-title mt-2 mb-1">
-            <span>Friends</span>
-          </div>
-          <ul class="listview image-listview flush transparent no-line">
-            <li>
-              <a href="page-chat.html" class="item">
-                <img src="assets/img/sample/avatar/avatar7.jpg" alt="image" class="image">
-                <div class="in">
-                  <div>Sophie Asveld</div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="page-chat.html" class="item">
-                <img src="assets/img/sample/avatar/avatar3.jpg" alt="image" class="image">
-                <div class="in">
-                  <div>Sebastian Bennett</div>
-                  <span class="badge badge-danger">6</span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="page-chat.html" class="item">
-                <img src="assets/img/sample/avatar/avatar10.jpg" alt="image" class="image">
-                <div class="in">
-                  <div>Beth Murphy</div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="page-chat.html" class="item">
-                <img src="assets/img/sample/avatar/avatar2.jpg" alt="image" class="image">
-                <div class="in">
-                  <div>Amelia Cabal</div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="page-chat.html" class="item">
-                <img src="assets/img/sample/avatar/avatar5.jpg" alt="image" class="image">
-                <div class="in">
-                  <div>Henry Doe</div>
-                </div>
-              </a>
-            </li>
-          </ul>
-
-        </div>
-
-        <!-- sidebar buttons -->
-        <div class="sidebar-buttons">
-          <a href="javascript:;" class="button">
-            <ion-icon name="person-outline"></ion-icon>
-          </a>
-          <a href="javascript:;" class="button">
-            <ion-icon name="archive-outline"></ion-icon>
-          </a>
-          <a href="javascript:;" class="button">
-            <ion-icon name="settings-outline"></ion-icon>
-          </a>
-          <a href="javascript:;" class="button">
-            <ion-icon name="log-out-outline"></ion-icon>
-          </a>
-        </div>
-        <!-- * sidebar buttons -->
-      </div>
-    </div>
-  </div>
-  <!-- * App Sidebar -->
 
   <!-- ///////////// Js Files ////////////////////  -->
   <!-- Jquery -->
