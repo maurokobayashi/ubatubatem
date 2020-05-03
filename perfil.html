@@ -17,7 +17,7 @@
   <link rel="manifest" href="__manifest.json">
 </head>
 
-<body class="bg-white">
+<body>
 
   <!-- loader -->
   <div id="loader">
@@ -137,9 +137,9 @@
         <div class="modal-body">
           <div class="action-sheet-content">
             <p class="font-13">
-              <strong class="display-block">Delivery (taxa R$ 4):</strong>
+              <strong class="display-block">Delivery - taxa R$ 4</strong>
               Praia Grande, Itaguá, Centro, Estufa I, Estufa II, Jardim Carolina, Perequê Açu
-              <strong class="display-block mt-1">Retirada:</strong>
+              <strong class="display-block mt-1">Retirada</strong>
               Itaguá
             </p>
             <a href="#" class="btn btn-secondary btn-block btn-sm" data-dismiss="modal">Fechar</a>
@@ -158,10 +158,11 @@
           <ion-icon name="logo-whatsapp"></ion-icon>
         </div>
         <div class="modal-header">
-          <h5 class="modal-title">11 980456449</h5>
+          <h5 class="modal-title">WhatsApp</h5>
         </div>
         <div class="modal-body">
           Maycon Arcante Pães Artesanais
+          <br>11 98045-6449
         </div>
         <div class="modal-footer">
           <div class="btn-inline">
@@ -215,7 +216,7 @@
     <div class="section mt-2">
       <div class="profile-head">
         <div class="avatar">
-          <img src="https://scontent-gru2-2.cdninstagram.com/v/t51.2885-19/s150x150/93592879_277154649972909_7130863652415995904_n.jpg?_nc_ht=scontent-gru2-2.cdninstagram.com&_nc_ohc=FFZMRIJO6W8AX9gUJRe&oh=3eeb47e1e41471aa03b5d6d9ae1d93a6&oe=5ED2B8A8" alt="avatar" class="imaged w64 ">
+          <img src="https://scontent-gru2-2.cdninstagram.com/v/t51.2885-19/s150x150/93592879_277154649972909_7130863652415995904_n.jpg?_nc_ht=scontent-gru2-2.cdninstagram.com&_nc_ohc=FFZMRIJO6W8AX9gUJRe&oh=3eeb47e1e41471aa03b5d6d9ae1d93a6&oe=5ED2B8A8" alt="avatar" class="imaged w64 rounded">
         </div>
         <div class="in">
           <h3 class="name">Maycon Arcante Pães Artesanais</h3>
@@ -224,47 +225,75 @@
       </div>
     </div>
 
-
     <div class="section mt-2 mb-2">
       <div class="profile-info">
         <div class="bio">
           Pães de Fermentação Natural - Itaguá/Ubatuba
           <br>Pedidos por Mensagem ou por WhatsApp
         </div>
-        <div class="mt-1">
-          <a href="#" class="display-block color-secondary" data-toggle="modal" data-target="#action-sheet-regioes">Delivery ou retirada <ion-icon name="information-circle-outline"></ion-icon></a>
-          Terça a Sábado - 08h às 20h
-        </div>
-        <div class="link">
-          <a href="#" class="display-block" data-toggle="modal" data-target="#dialog-whatsapp">11 98045-6449</a>
-        </div>
       </div>
     </div>
 
-    <div class="section mt-2">
-      <div>
-        <a href="#" class="item" data-toggle="modal" data-target="#dialog-whatsapp">
-          <button type="button" class="btn btn-sm btn-text">
-            <ion-icon name="logo-whatsapp" role="img" class="md hydrated"></ion-icon>
-            WhatsApp
-          </button>
-        </a>
-        <a href="https://www.instagram.com/marcante.paes" target="_system" class="item">
-          <button type="button" class="btn btn-sm btn-text">
-            <ion-icon name="logo-instagram" role="img" class="md hydrated"></ion-icon>
-            Instagram
-          </button>
-        </a>
-        <a href="#" class="item" data-toggle="modal" data-target="#dialog-salvar">
-          <button type="button" class="btn btn-sm btn-text">
-            <ion-icon name="bookmark-outline" role="img" class="md hydrated"></ion-icon>
-            Salvar
-          </button>
-        </a>
-      </div>
+    <div class="section full mt-3">
+      <ul class="listview listview-sm image-listview">
+        <li>
+          <a href="#" class="item" data-toggle="modal" data-target="#dialog-whatsapp">
+            <div class="icon-box">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </div>
+            <div class="in">
+              <div>11 98045-6449</div>
+              <span class="text-muted">enviar mensagem</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="item" data-toggle="modal" data-target="#action-sheet-regioes">
+            <div class="icon-box">
+              <ion-icon name="bicycle-outline"></ion-icon>
+            </div>
+            <div class="in">
+              <div>Delivery ou Retirada</div>
+              <span class="text-muted">regiões de entrega</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="item">
+            <div class="icon-box">
+              <ion-icon name="alarm-outline"></ion-icon>
+            </div>
+            <div class="in">
+              <div>Aberto - 08h às 20h</div>
+              <span class="text-muted">ver mais</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/marcante.paes" target="_system" class="item">
+            <div class="icon-box">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </div>
+            <div class="in">
+              <div>@marcante.paes</div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="item" data-toggle="modal" data-target="#dialog-salvar">
+            <div class="icon-box">
+              <ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div class="in">
+              <div>Salvar na minha lista</div>
+            </div>
+          </a>
+        </li>
+      </ul>
     </div>
 
-    <div class="section full mt-2">
+
+    <div class="section full mt-3 bg-white">
       <div class="wide-block transparent p-0">
         <ul class="nav nav-tabs lined iconed" role="tablist">
           <li class="nav-item">

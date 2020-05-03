@@ -1687,6 +1687,16 @@ a.badge-dark {
   position: relative;
   min-height: 50px;
 }
+.image-listview.listview-sm > li .item{
+  padding-top:7px;
+  padding-bottom:7px;
+}
+.listview.listview-sm > li > a {
+  min-height: 40px!important;
+}
+.listview.listview-sm > li > a {
+  font-size:13px;
+}
 
 .listview > li .item {
   position: relative;
